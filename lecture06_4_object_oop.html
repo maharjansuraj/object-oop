@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="eng" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<Title>OOP Object</Title>
+		<script type="text/javascript">
+		"use strict";
+		
+		function Fruit(type,color){
+			this.type= type;
+			this.color=color;
+			this.getInfo = function(){
+				return 'The color of ' +this.type+ ' is ' + this.color+'.';
+			};
+		}
+		
+		const lemon = new Fruit("lemon", "yellow");
+		console.log(lemon.getInfo());
+		
+		const strawberry = new Fruit("strawbery", "red")
+		console.log(strawberry.getInfo());
+		
+		
+		</script>
+		
+	</head>
+	<body>	
+		Javascript lecture-wise practice.
+	</body>
+</html>
